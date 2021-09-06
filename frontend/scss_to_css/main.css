@@ -314,4 +314,9 @@ select {
   padding: 0.5rem 2rem;
   border-radius: 3rem;
 }
+
+.options__lenses {
+  color: #000;
+  width: auto;
+}
 /*# sourceMappingURL=main.css.map */

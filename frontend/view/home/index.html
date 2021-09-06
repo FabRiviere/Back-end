@@ -69,9 +69,21 @@
         </div>
         <section class="articles__section">
             <h2 class="articles__section-title">Nos produits</h2>
-            <div class="articles__container">
 
-                
+            <div class="articles__container" id="articles__container">
+
+                <template id="templateArticle">
+                    <div class="article__card">
+                        <article class="article__card-info">
+                            <a href="../produit/produit.html" id="camera__link" class="camera__link">
+                                <img src='' class="article__card-img" id="imgCamera"/>                                                                  
+                                <h3 id="name"></h3>
+                                <p id="description"></p>
+                                <p id="price"></p>
+                            </a>
+                        </article>
+                    </div>
+                </template>
                 
                
                 
@@ -81,8 +93,8 @@
 
     </main>
     <!-- Optional JavaScript -->
-    <script src="../home/index.js"></script>
-    <script src="../../js/camera.js"></script>
+    <script src="./index.js"></script>
+   
     <script src="../produit/produit.js"></script>
   </body>
 </html>
