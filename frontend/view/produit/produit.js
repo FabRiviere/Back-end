@@ -26,6 +26,7 @@ function getCamera(cameraId) {
         .then(function(cameras) {
             return cameras
         })
+        
         .catch(function(erreur) {
             alert(erreur)
         })
@@ -33,16 +34,21 @@ function getCamera(cameraId) {
 
 
 
-
 // j'injecte le contenu selon le contenu de l'Api
 
 function changeContentCamera(camera) {
-   
 
+        
     document.getElementById("imgCamera").src = camera.imageUrl
     document.getElementById("name").textContent = camera.name
     document.getElementById("description").textContent = camera.description
-    document.getElementById("price").textContent = camera.price + " €"
-    document.getElementById("options__lenses").textContent = camera.lenses
+    document.getElementById("price").textContent = camera.price/100 + " €"
+    
+    const tabOption = camera.lenses
+    
+    for (let option of tabOption) {
+         
+        document.getElementById("lenses").innerHTML += `<option value="${option}" selected id="options__lenses">${option}</option>`
+    }
 }
 

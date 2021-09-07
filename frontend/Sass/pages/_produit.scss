@@ -1,4 +1,54 @@
+.produit__container {
+    display: flex;
+    justify-content: center;
+}
+
+.personnalisation {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 1rem 0;
+    background-color: rgb(94, 226, 175);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3rem;
+    border: 3px solid #fff;
+}
+
+.lenses {
+    color: #fff;
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    @include gradient-text;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+select {
+    font-size: 1.5rem;
+    text-align: center;
+    box-sizing: 100%;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+}
+
 .options__lenses {
     color: #000;
-    width: auto;
+}
+
+.ajout__panier {
+    @include button;
+    font-size: 1.5rem;
+    
+    &:hover {
+    @include button-hover;
+    }
 }

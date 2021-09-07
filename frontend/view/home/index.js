@@ -53,7 +53,7 @@ function displayCamera() {
     cloneElt.getElementById("imgCamera").src = camera.imageUrl
     cloneElt.getElementById("name").textContent = camera.name
     cloneElt.getElementById("description").textContent = camera.description
-    cloneElt.getElementById("price").textContent = camera.price + " €"
+    cloneElt.getElementById("price").textContent = camera.price/100 + " €"
     cloneElt.getElementById("camera__link").href += `?id=${camera._id}`
 
     document.getElementById("articles__container").appendChild(cloneElt)
